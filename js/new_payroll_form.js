@@ -54,6 +54,7 @@ const save = (event) => {
     }
 }
 
+
 const createOrUpdateEmployeePayroll=()=>{
     let postURL=site_properties.server_url;
     let methodCall="POST";
@@ -70,6 +71,7 @@ const createOrUpdateEmployeePayroll=()=>{
             throw error;
         });
 }
+
 
 const setEmployeePayrollObject = () => {
     if(!isUpdate && site_properties.use_local_storage.match("true")){

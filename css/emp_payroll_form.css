@@ -37,7 +37,7 @@ body{
     text-transform: capitalize;
 }
 .emp-payroll{
-    color: #8f62d8;
+    color: #300d68;
 }
 
 *{
@@ -47,7 +47,7 @@ body{
 /* UC2 */
 .form-content{
     min-height: calc(100% - 80px);
-    background-color: #d3ac9a;
+    background-color: #9caa85;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,20 +150,20 @@ select{
     font-weight: 400;
     min-width: 140px;
     padding: 7px 7px;
-    border: 1px solid #99187d;
+    border: 1px solid #3faa59;
     cursor: pointer;
 }
 
 .button:hover{
-    color: #300a97;
+    color: #130a97;
     background-color: #9ad48d;
 }
 .submitButton:hover{
-    background-color: #c92981;
+    background-color: #46a7b4;
 }
 .submitButton{
     border: 1px solid #707070;
-    background-color: #b52ab9;
+    background-color: #869277;
     margin-right: 30px;
 }
 .cancelButton{
