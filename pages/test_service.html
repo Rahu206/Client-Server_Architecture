@@ -28,7 +28,7 @@
     <script>
      const getElem = document.querySelector("#get_services");
         const getUrl = "http://localhost:3000/EmployeePayrollDB";
-        makePromiseCall("GET", getUrl, true)
+        makeServiceCall("GET", getUrl, true)
             .then(responseText => {
                 getElem.textContent = "Get User Data:" + responseText;
             })
@@ -36,10 +36,10 @@
                 getElem.textContent = "Get error status:" + JSON.stringify(error);
             });
 
-       const deleteElem = document.querySelector("#delete_services");
-        const deleteUrl = "http://localhost:3000/EmployeePayrollDB/2";
+      const deleteElem = document.querySelector("#delete_services");
+        const deleteUrl = "http://localhost:3000/EmployeePayrollDB/1";
         //onreadystatechange is not called for synchronous request
-        makePromiseCall("DELETE", deleteUrl, false)
+        makeServiceCall("DELETE", deleteUrl, false)
             .then(responseText => {
                 deleteElem.textContent = "User Deleted:" + responseText;
             })
@@ -47,10 +47,10 @@
                 deleteElem.textContent = "Delete error status:" + JSON.stringify(error);
             });
 
-       const postElem = document.querySelector("#post_services");
-        const postUrl = "http://localhost:3000/EmployeePayrollDB";
+        const postElem = document.querySelector("#post_services");
+        const postUrl = "http://localhost:3000/EmployeePayrollDB/3";
         const empData = {
-                        "_name": "neha",
+                        "_name": "Amarpa Shashanka Keerthi Kumar",
                         "_gender": "female",
                         "_department": [
                         "Sales"
@@ -58,10 +58,10 @@
                         "_salary": "400000",
                         "_startDate": "29 Oct 2019",
                         "_note": "",
-                        "_profilePic": "../assets/profile-images/Ellipse -1.png",
-                        "id": 2
+                        "_profilePic": "..assets/assets/profile-images/Ellipse -1.png",
+                        "id": 8
                          };
-        makePromiseCall("POST", postUrl, true, empData)
+        makeServiceCall("POST", postUrl, true, empData)
             .then(responseText => {
                 postElem.textContent = "New User Added:" + responseText;
             })
